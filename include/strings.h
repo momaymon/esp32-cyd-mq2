@@ -1,0 +1,15 @@
+#pragma once
+// All on-screen text lives here (the TFT fonts are ASCII only).
+#define STR_TITLE "MQ-2 Gas Monitor"
+#define STR_WARMUP "Warming up"
+#define STR_CALIB "Calibrating (clean air)"
+#define STR_LEVEL_OK "SAFE"
+#define STR_LEVEL_WARN "WARNING"
+#define STR_LEVEL_DANGER "DANGER"
+#define STR_LPG "LPG"
+#define STR_SMOKE "Smoke"
+#define STR_VOLT "AO"
+#define STR_RATIO "Rs/R0"
+#define STR_DO_ON "DO: GAS"
+#define STR_DO_OFF "DO: --"
+#define STR_PPM "ppm"

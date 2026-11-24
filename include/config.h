@@ -1,13 +1,13 @@
 #pragma once
 
 // ---------- Wiring ----------
-// MQ-2 AO -> GPIO35 (P3 connector, ADC1, input only)
-// MQ-2 DO -> GPIO22 (optional, set to -1 if not wired)
-#define MQ2_AO_PIN 35
+// MQ-2 AO -> GPIO27 (CN1 connector, ADC2 - do not enable WiFi, ADC2 stops working with it)
+// MQ-2 DO -> GPIO22 (optional, set to -1 if not wired; internal pull-up keeps it idle when open)
+#define MQ2_AO_PIN 27
 #define MQ2_DO_PIN 22
 
 // MQ-2 module runs on 5V, so AO can reach 5V. ESP32 ADC max is 3.3V.
-// Put a divider on AO: AO --10k--+--20k-- GND, tap (+) to GPIO35.
+// Put a divider on AO: AO --10k--+--20k-- GND, tap (+) to GPIO27.
 // DIVIDER_RATIO = (R1 + R2) / R2. No divider -> 1.0 (only if module is on 3.3V).
 #define DIVIDER_RATIO 1.5f
 

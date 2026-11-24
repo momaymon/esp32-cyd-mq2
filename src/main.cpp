@@ -160,7 +160,7 @@ void setup() {
   pinMode(LED_G, OUTPUT);
   pinMode(LED_B, OUTPUT);
   setLed(false, false, false);
-  if (MQ2_DO_PIN >= 0) pinMode(MQ2_DO_PIN, INPUT);
+  if (MQ2_DO_PIN >= 0) pinMode(MQ2_DO_PIN, INPUT_PULLUP);
 
   analogReadResolution(12);
   analogSetPinAttenuation(MQ2_AO_PIN, ADC_11db);  // ~0..3.1 V range
